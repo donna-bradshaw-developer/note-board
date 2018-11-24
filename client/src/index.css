@@ -1,0 +1,187 @@
+@import url(http://fonts.googleapis.com/css?family=Shadows+Into+Light);
+
+body, html, div.board, div#react-container {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+h1.title{
+    font-family: "Shadows Into Light", Arial;
+    font-size: 500%;
+    color: indianred;
+    margin: 150px 50px 50px;
+}
+
+.inputForm{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.inputForm > input{
+    width: 50%;
+    height: 50px;
+    text-align: center;
+    margin: 20px;
+    font-size: 110%;
+}
+
+.inputButton{
+    display: block;
+    margin: 10px;
+    height: 60px;
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    padding: 20px;
+    font-size: 110%;
+}
+
+div.formContainer > p{
+    color: indianred;
+    font-size: 110%;
+}
+
+h1{
+    font-family: "Shadows Into Light", Arial;
+    color: indianred;
+    padding: 20px;
+    text-align: center;
+    margin: 0px;
+}
+
+/* //////////////////////////////////// HOME///////////////////// */
+
+#home{
+    display: flex;
+    width: 100%;
+    height: 1000px;
+}
+
+#home > img{
+    width: 50%;
+}
+
+#home-right{
+    text-align: center;
+    width: 50%;
+}
+
+#home-right > span{
+    margin: 10px 30px;
+    font-size: 150%;
+}
+
+#home-right a{
+    text-decoration: none
+}
+
+/* ////////////////////////////////  BOARD  /////////////////////////////// */
+
+div.board {
+    width: 100%;
+    height: 1100px;
+    background-image: url(./components/media/n-n-698976-unsplash.jpg);
+    background-size: contain;
+}
+
+#noteContainer{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-items: baseline;
+}
+
+/* ////////////////////////////////  NOTE  /////////////////////////////// */
+
+div.note {
+    height: 350px;
+    width: 350px;
+    background-color: whitesmoke;
+    margin: 10px;
+    position: relative;
+    box-shadow: 5px 5px 15px 0 rgba(0, 0, 0, .2);
+    font-size: 22px;
+    padding: 5px;
+    font-family: "Shadows Into Light", Arial;
+    word-wrap: break-word;
+}
+
+div.note:active {
+    cursor: -webkit-grabbing;
+}
+
+div.note:hover > span {
+    opacity: 1;
+}
+
+div.note > span {
+    position: absolute;
+    bottom: 2px;
+    right: 2px;
+    opacity: 0;
+    transition: opacity .25s linear;
+}
+
+input{
+    width: 98.5%;
+    height: 100px;
+}
+
+div.note button {
+    margin: 2px;
+}
+
+div.board button {
+  color: #fff;
+  font-size: 14px;
+}
+
+h1.header{
+    font-size: 400%;
+}
+
+#add, #profile, #logout, #back{
+  width: 10%;
+  height: 3em;
+  color: white;
+  margin: 10px 40px 30px;
+}
+
+#add{
+    background-color: teal;
+}
+
+#edit {
+  background-color: #337ab7;
+}
+
+#save {
+  background-color: #5cb85c;
+}
+
+#remove {
+  background-color: #d9534f;
+}
+
+#profile{
+    background-color: darkgoldenrod;
+}
+
+#profileLink{
+    text-decoration: none;
+    color: white;
+}
+
+#logout{
+    background-color: darkslategray;
+}
+
+
