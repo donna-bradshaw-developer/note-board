@@ -7,6 +7,8 @@ class Profile extends Component {
         return (
             <div>
                 <h1>Hello, {this.props.auth.user.username}</h1>
+                <p>This is a demo / concept project</p>
+                <p>Profile Features Coming Soon</p>
                 <button id="back"><Link to="/board">Back To Notes</Link></button>
             </div>
         );
