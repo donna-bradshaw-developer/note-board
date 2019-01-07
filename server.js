@@ -10,6 +10,7 @@ const profileRoutes = require("./routes/profileRoutes")
 const noteRoutes = require('./routes/noteRoutes')
 
 const PORT = process.env.PORT || 5510
+const secret = process.env.SECRET
 
 const path = require("path")
 
@@ -29,7 +30,7 @@ app.use((err, req, res, next)=>{
     return res.send({message: err.message})
 })
 
-app.use('/api', expressJwt({secret: process.env.SECRET}))
+app.use('/api', expressJwt({secret: secret}))
 
 app.use('/auth', authRoutes)
 app.use('/api/profile', profileRoutes)

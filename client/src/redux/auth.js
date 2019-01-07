@@ -33,7 +33,7 @@ export function authError(key, errCode){
 
 export const verify = () =>{
     return dispatch => {
-        profileAxios.get("/api/profile").then(res => {
+        profileAxios.get("/api/profile/").then(res => {
             let { user } = res.data
             dispatch(authenticate(user))
         })
